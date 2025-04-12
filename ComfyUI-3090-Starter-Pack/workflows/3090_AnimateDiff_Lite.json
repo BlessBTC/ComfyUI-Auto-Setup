@@ -1,0 +1,19 @@
+{
+    "version": "1.0",
+    "model": "stable-diffusion-v1-4.ckpt",
+    "vae": "vae-ema.ckpt",
+    "height": 512,
+    "width": 512,
+    "batch_size": 1,
+    "steps": 20,
+    "cfg_scale": 7.5,
+    "seed": 42,
+    "controlnet": {
+        "enabled": true,
+        "model": "control_v11f1e_sd15_openpose.pth"
+    },
+    "image_format": "png",
+    "output_directory": "output/",
+    "input_directory": "input/",
+    "use_fp16": true
+}
